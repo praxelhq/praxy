@@ -1,0 +1,30 @@
+[project]
+name = "praxy-voice"
+version = "0.1.0"
+description = "Open-source Indic TTS — Hindi · Telugu · Tamil · English with codemix and voice cloning."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Pushpak Teja Menta", email = "pushpak@praxel.in" }]
+keywords = ["text-to-speech", "tts", "indic", "telugu", "tamil", "hindi", "lora", "voice-cloning"]
+
+dependencies = [
+    "indic-transliteration>=2.3",
+    "anthropic>=0.40",
+    "modal>=0.64",
+    "numpy",
+    "soundfile",
+]
+
+[project.urls]
+Homepage = "https://github.com/praxelhq/praxy"
+Demo = "https://huggingface.co/spaces/Praxel/praxy-voice-demo"
+Model = "https://huggingface.co/Praxel/praxy-voice-r6"
+PSP = "https://github.com/praxelhq/psp-eval"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["praxy*", "serving*"]

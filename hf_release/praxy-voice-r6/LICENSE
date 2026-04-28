@@ -1,0 +1,32 @@
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+Copyright 2026 Praxel Ventures (https://praxel.in)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+----
+
+ATTRIBUTION
+
+This LoRA adapter is trained on top of ResembleAI Chatterbox Multilingual
+(MIT License, https://github.com/resemble-ai/chatterbox). Users deploying
+this adapter must honour Chatterbox's MIT attribution requirements in
+addition to the Apache-2.0 terms above. The Chatterbox base model is not
+included in this release; users obtain it directly from Resemble AI.
+
+Training data is drawn from publicly released Indic speech corpora
+(IndicTTS, Rasa, FLEURS, Shrutilipi subsets) under their respective
+CC-BY-4.0-compatible licences. Attribution to the data providers is the
+responsibility of end-users who redistribute downstream works.

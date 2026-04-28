@@ -1,0 +1,159 @@
+% Bibliography for Praxy Voice TTS paper — entries grouped by topic.
+
+% === Our own companion paper ===
+@unpublished{psp2026,
+  title={{PSP}: An Interpretable Per-Dimension Accent Benchmark for {Indic} Text-to-Speech},
+  author={Teja, Pushpak},
+  note={arXiv preprint, 2026. Companion paper submitted separately.},
+  year={2026}
+}
+
+% === Base model ===
+@misc{chatterbox2025,
+  title={{Chatterbox} Multilingual: Open-Source {TTS} for 23 Languages},
+  author={{Resemble AI}},
+  howpublished={\url{https://github.com/resemble-ai/chatterbox}},
+  year={2025},
+  note={Model weights at \url{https://huggingface.co/ResembleAI/chatterbox}, accessed 2026-04}
+}
+
+% === LoRA ===
+@inproceedings{hu2021lora,
+  title={{LoRA}: Low-Rank Adaptation of Large Language Models},
+  author={Hu, Edward J. and Shen, Yelong and Wallis, Phillip and Allen-Zhu, Zeyuan and Li, Yuanzhi and Wang, Shean and Wang, Lu and Chen, Weizhu},
+  booktitle={ICLR},
+  year={2022},
+  note={arXiv:2106.09685}
+}
+
+% === Contemporary multilingual / Indic TTS ===
+@article{omnivoice2026,
+  title={{OmniVoice}: Towards Omnilingual Zero-Shot Text-to-Speech with Diffusion Language Models},
+  author={{k2-fsa Team}},
+  journal={arXiv:2604.00688},
+  year={2026},
+  note={Model at \url{https://huggingface.co/k2-fsa/OmniVoice}}
+}
+
+@article{a2tts2025,
+  title={{A2TTS}: {TTS} for Low-Resource {Indian} Languages},
+  author={Bhadoriya, Ayush Singh and others},
+  journal={arXiv:2507.15272},
+  year={2025}
+}
+
+@misc{parler2024,
+  title={{Indic Parler-TTS}: Open-Source {TTS} for 20 {Indic} Languages},
+  author={{AI4Bharat} and Lacombe, Yoach},
+  howpublished={\url{https://huggingface.co/ai4bharat/indic-parler-tts}},
+  year={2024}
+}
+
+@misc{indicf52024,
+  title={{IndicF5}: Flow-Matching {TTS} for 11 {Indic} Languages},
+  author={{AI4Bharat}},
+  howpublished={\url{https://huggingface.co/ai4bharat/IndicF5}},
+  year={2024}
+}
+
+@misc{voxcpm2,
+  title={{VoxCPM2}: Tokeniser-Free {TTS} for Multilingual Speech Generation},
+  author={{OpenBMB}},
+  howpublished={\url{https://github.com/OpenBMB/VoxCPM}},
+  year={2025}
+}
+
+@article{f5tts2024,
+  title={{F5-TTS}: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching},
+  author={Chen, Yushen and others},
+  journal={arXiv:2410.06885},
+  year={2024}
+}
+
+% === Romanisation / script processing ===
+@misc{iso15919,
+  title={{ISO} 15919: Transliteration of {Devanagari} and Related {Indic} Scripts into {Latin} Characters},
+  author={{International Organization for Standardization}},
+  year={2001},
+  howpublished={Standards document}
+}
+
+@misc{indictransliteration,
+  title={\texttt{indic-transliteration}: {Python} Package for {Indic} Script Transliteration},
+  author={Many contributors},
+  howpublished={\url{https://github.com/indic-transliteration/indic_transliteration_py}},
+  year={2024}
+}
+
+% === Ahmed-Ezzat20 reference multilingual LoRA framework (direct dependency) ===
+@misc{chatterbox_ft_ahmed,
+  title={Chatterbox Fine-tuning Multilingual},
+  author={{Ahmed-Ezzat20}},
+  howpublished={\url{https://github.com/Ahmed-Ezzat20/chatterbox-finetuning-multilingual}},
+  year={2025}
+}
+
+% === Datasets ===
+@inproceedings{indictts2022,
+  title={Towards Building Text-to-Speech Systems for the Next Billion Users},
+  author={Kumar, Gokul and others},
+  booktitle={ICASSP},
+  year={2023}
+}
+
+@inproceedings{ai4bharat2023rasa,
+  title={{Rasmalai}: A Large-Scale {Indic} Speech Dataset with Accent and Intonation Descriptions},
+  author={Sankar, Aparna and others},
+  booktitle={Interspeech},
+  year={2025}
+}
+
+@inproceedings{conneau2022fleurs,
+  title={{FLEURS}: Few-Shot Learning Evaluation of Universal Representations of Speech},
+  author={Conneau, Alexis and Ma, Min and Khanuja, Simran and Zhang, Yu and Axelrod, Vera and Dalmia, Siddharth and Riesa, Jason and Rivera, Clara and Bapna, Ankur},
+  booktitle={SLT},
+  year={2022}
+}
+
+% === PEFT / Hugging Face ===
+@misc{peft,
+  title={{PEFT}: State-of-the-Art Parameter-Efficient Fine-Tuning Methods},
+  author={{HuggingFace}},
+  howpublished={\url{https://github.com/huggingface/peft}},
+  year={2024}
+}
+
+% === Wav2Vec2 XLS-R (shared with PSP) ===
+@article{babu2021xlsr,
+  title={{XLS-R}: Self-Supervised Cross-Lingual Speech Representation Learning at Scale},
+  author={Babu, Arun and Wang, Changhan and Tjandra, Andros and others},
+  journal={Interspeech},
+  year={2022}
+}
+
+% === Karya MOS (deferred v2 work) ===
+@misc{karya2025,
+  title={Karya: Crowdsourcing Platform for Indian Languages},
+  author={{Karya Team}},
+  howpublished={\url{https://karya.in}},
+  year={2025}
+}
+
+% === PSR (for cross-reference with PSP) ===
+@inproceedings{psr2026,
+  title={Quantifying Speaker Embedding Phonological Rule Interactions in Accented Speech Synthesis},
+  author={Lertpetchpun, Thanathai and others},
+  booktitle={IEEE ICASSP},
+  year={2026},
+  note={arXiv:2601.14417}
+}
+
+% === Sarvam Bulbul technical disclosure (cited in §III.E) ===
+@misc{sarvam_bulbul2026,
+  title={Bulbul-v3: An Indic Multilingual TTS with Unified Native-Script Tokenisation},
+  author={{Sarvam AI}},
+  howpublished={\url{https://www.sarvam.ai/blog/bulbul-v3}},
+  year={2026},
+  month=feb,
+  note={Technical blog post.}
+}

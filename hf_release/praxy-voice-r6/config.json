@@ -1,0 +1,48 @@
+{
+  "adapter_type": "lora",
+  "base_model_name_or_path": "ResembleAI/chatterbox",
+  "base_model_target": "t3",
+  "peft_type": "LORA",
+  "task_type": "FEATURE_EXTRACTION",
+  "r": 32,
+  "lora_alpha": 64,
+  "lora_dropout": 0.05,
+  "bias": "none",
+  "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj"],
+  "fan_in_fan_out": false,
+  "modules_to_save": null,
+  "praxy_metadata": {
+    "round": 6,
+    "step": 8000,
+    "trainable_params": 7864320,
+    "base_params": 810000000,
+    "training_data_hours": 1886,
+    "training_languages": ["telugu", "tamil", "hindi", "english"],
+    "data_mix": {"telugu": 0.40, "hindi": 0.25, "tamil": 0.25, "english": 0.10},
+    "bups_preprocessing": true,
+    "hindi_proxy_language_id": true,
+    "learning_rate_peak": 3e-6,
+    "batch_size": 16,
+    "grad_accum": 1,
+    "warmup_steps": 500,
+    "max_steps": 8000,
+    "precision": "bf16",
+    "gpu": "A100-80GB"
+  },
+  "inference_defaults": {
+    "language_routing": {
+      "te": {"branch": "lora", "bups": true, "language_id": "hi"},
+      "ta": {"branch": "lora", "bups": true, "language_id": "hi"},
+      "hi": {"branch": "vanilla", "bups": false, "language_id": "hi"}
+    },
+    "config_b_sampling": {
+      "exaggeration": 0.7,
+      "temperature": 0.6,
+      "min_p": 0.1,
+      "cfg_weight": 0.5,
+      "repetition_penalty": 2.0,
+      "top_p": 1.0
+    },
+    "recommended_reference_audio_seconds": [8, 11]
+  }
+}

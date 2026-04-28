@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Virtual envs
+.venv/
+venv/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+*.key
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Modal local cache
+.modal-cache/
