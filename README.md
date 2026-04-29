@@ -1,6 +1,6 @@
 # 🎤 Praxy Voice
 
-Open-source Hindi · Telugu · Tamil · English TTS — including code-mix and voice cloning. The reference implementation accompanying the paper *"Praxy Voice: Voice-Prompt Recovery + BUPS for Commercial-Class Indic TTS from a Frozen Non-Indic Base at Zero Commercial-Training-Data Cost"* (arXiv 2026).
+Open-source Hindi · Telugu · Tamil · English TTS — including code-mix and voice cloning. The reference implementation accompanying the paper *"Praxy Voice: Voice-Prompt Recovery + BUPS for Commercial-Class Indic TTS from a Frozen Non-Indic Base at Zero Commercial-Training-Data Cost"* ([arXiv:2604.25441](https://arxiv.org/abs/2604.25441)). Companion paper: *"PSP: An Interpretable Per-Dimension Accent Benchmark for Indic Text-to-Speech"* ([arXiv:2604.25476](https://arxiv.org/abs/2604.25476)).
 
 | Asset | Where |
 |---|---|
@@ -65,8 +65,10 @@ On the [PSP](https://github.com/praxelhq/psp-eval) benchmark + LLM-WER intelligi
   title={Praxy Voice: Voice-Prompt Recovery + BUPS for Commercial-Class Indic TTS from a Frozen Non-Indic Base at Zero Commercial-Training-Data Cost},
   author={Menta, Venkata Pushpak Teja},
   year={2026},
-  howpublished={arXiv preprint},
-  note={\url{https://github.com/praxelhq/praxy}}
+  eprint={2604.25441},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL},
+  url={https://arxiv.org/abs/2604.25441}
 }
 ```
 

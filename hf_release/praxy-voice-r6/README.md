@@ -22,7 +22,7 @@ pipeline_tag: text-to-speech
 
 **Praxy Voice R6** is a LoRA adapter that extends [ResembleAI Chatterbox Multilingual](https://huggingface.co/ResembleAI/chatterbox) to high-quality Telugu and Tamil text-to-speech, two languages the Chatterbox base does not natively cover.
 
-This adapter is part of a larger recipe described in the accompanying paper *"Praxy Voice: Voice-Prompt Recovery + BUPS for Commercial-Class Indic TTS from a Frozen Non-Indic Base"* (arXiv 2026). The recipe is:
+This adapter is part of a larger recipe described in the accompanying paper *"Praxy Voice: Voice-Prompt Recovery + BUPS for Commercial-Class Indic TTS from a Frozen Non-Indic Base"* ([arXiv:2604.25441](https://arxiv.org/abs/2604.25441)). The recipe is:
 
 1. **BUPS** — ISO-15919 romanisation of Indic text before tokenisation
 2. **This LoRA adapter** — rank-32 attention-only adapter on Chatterbox's `t3` transformer (4.7M trainable params)
@@ -220,18 +220,24 @@ Training code: [github.com/praxelhq/praxy](https://github.com/praxelhq/praxy) (M
 If you use this model in published work, please cite the companion papers:
 
 ```bibtex
-@unpublished{praxyvoice2026,
-  title={Praxy Voice: Voice-Prompt Recovery + BUPS for Commercial-Class Indic TTS from a Frozen Non-Indic Base},
-  author={Teja, Pushpak},
-  note={arXiv preprint, 2026},
-  year={2026}
+@misc{praxyvoice2026,
+  title={Praxy Voice: Voice-Prompt Recovery + BUPS for Commercial-Class Indic TTS from a Frozen Non-Indic Base at Zero Commercial-Training-Data Cost},
+  author={Menta, Venkata Pushpak Teja},
+  year={2026},
+  eprint={2604.25441},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL},
+  url={https://arxiv.org/abs/2604.25441}
 }
 
-@unpublished{psp2026,
-  title={PSP: An Interpretable Per-Dimension Accent Benchmark for Indic TTS},
-  author={Teja, Pushpak},
-  note={arXiv preprint, 2026},
-  year={2026}
+@misc{psp2026,
+  title={PSP: An Interpretable Per-Dimension Accent Benchmark for Indic Text-to-Speech},
+  author={Menta, Venkata Pushpak Teja},
+  year={2026},
+  eprint={2604.25476},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL},
+  url={https://arxiv.org/abs/2604.25476}
 }
 ```
 
