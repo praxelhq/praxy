@@ -7,7 +7,7 @@ Open-source Hindi · Telugu · Tamil · English TTS — including code-mix and v
 | **Live demo** | [`Praxel/praxy-voice-demo`](https://huggingface.co/spaces/Praxel/praxy-voice-demo) on HF Spaces |
 | **Model weights (R6 LoRA)** | [`Praxel/praxy-voice-r6`](https://huggingface.co/Praxel/praxy-voice-r6) — Apache-2.0 |
 | **Paper** | `paper/praxy_tts/praxy_tts.pdf` |
-| **PSP companion** | [`praxelhq/psp-eval`](https://github.com/praxelhq/psp-eval) — accent benchmark + PyPI package |
+| **PSP companion** | [`praxelhq/psp-eval`](https://github.com/praxelhq/psp-eval) — accent benchmark (install from source until PyPI release) |
 
 ## What's here
 
